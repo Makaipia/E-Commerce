@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Positive Energy Shop-Online</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+	
+
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--- sass styling --->
+	<link rel="stylesheet" type="text/css" href="css/homepageStyles.css">
+</head>
+<body>
+	
+		<!--NAVBAR-->
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="nav-main">
+	  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<a class="navbar-brand" href="#" style="padding-left: 12vw; font-size: 30px;">Positive Energy Shop-Online</a>
+	  		<div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 33vw;" >
+	    		<ul class="navbar-nav nav-ul">
+	      			<li class="nav-item" >
+	        			<a class="nav-link" href="products.html">Products <span class="sr-only">(current)</span></a>
+	      			</li> 
+			      <li class="nav-item">
+			        	<a class="nav-link" href="cart.html">Cart</a>
+			      </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="index.html">Sign out</a>
+			  	</li>
+	    		</ul>
+	  		</div>
+		</nav>
+
+<!--PRODUCTS-->
+<div id="cartmain" class="container-fluid">
+	<div class="container" id="cart">
+		<div class="row">
+			<div class="col-md-12" id="cart-heading" align="center">
+				Shopping Cart
+			</div>
+		</div>
+		<hr>
+		<div class="row" id="table-row">
+			<table class="table table-striped" id="item-table">
+			  <thead>
+			    <tr>
+			      <th>Item Id</th>
+			      <th>Product Name</th>
+			      <th>Price</th>
+			      <th>Quantity</th>
+			      <th>Total</th>
+			    </tr>
+			  </thead>
+			  <tbody id="item-table-body">
+
+			  </tbody>
+			</table>
+
+		</div>
+			<div class="row" align="center">
+				<div class="col-md-12">
+					<div>Total : R<label id="totalLabel">0</label>
+                         
+				</div>
+                
+			     </div>
+		      </div>
+		<hr>
+
+	</div>
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4 offset-md-4">
+            <div class="card ">
+                <div class="card-header">
+                    <div class="row">
+                        <h3 class="text-xs-center">Payment Details</h3>
+                        <img class="img-fluid cc-img" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                    </div>
+                </div>
+                <div class="card-block">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label>CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input type="tel" class="form-control" placeholder="Valid Card Number" />
+                                        <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline"></span> DATE</label>
+                                    <input type="tel" class="form-control" placeholder="MM / YY" />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 float-xs-right">
+                                <div class="form-group">
+                                    <label>CV CODE</label>
+                                    <input type="tel" class="form-control" placeholder="CVV" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label>CARD OWNER</label>
+                                    <input type="text" class="form-control" placeholder="Card Owner Names" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+			
+                <div class="card-footer">
+                  
+                        <div class="col-xs-12">
+						    <button class="btn btn-warning btn-lg btn-block" onclick="backtoproduct()">Back to Products</button>
+                            <button class="btn btn-warning btn-lg btn-block">Process payment</button>
+                        </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div id="about" class="container-fluid">	
+	
+	<div class="row" id="about-row">
+		<div class="col-md-12" align="center">
+		Positive Energy Shop-Online
+		</div>
+	</div>
+
+<style>
+    .cc-img {
+        margin: 0 auto;
+    }
+</style>
+
+
+           
+
+</body>
+</html>
